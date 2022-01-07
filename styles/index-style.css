@@ -1,0 +1,59 @@
+@font-face {
+  font-family: eraserRegular;
+  src: url(eraserregular.ttf);
+}
+
+@font-face {
+  font-family: eraserDust;
+  src: url(eraserdust.ttf);
+}
+
+:root {
+  --isMarked: false;
+}
+
+.board-row {
+  height: 33.3%;
+}
+
+.board-row button {
+  background-color: black;
+  font-size: 10vw;
+  font-family: 'Fredericka the Great', cursive;
+}
+
+.board-row button:hover {
+  color: red;
+  opacity: .25;
+}
+
+#board-row-1 button {
+  border-top: none;
+  border-bottom: 1px solid white;
+}
+
+#board-row-2 button {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+#board-row-3 button {
+  border-top: 1px solid white;
+  border-bottom: none;
+}
+
+.board-btn-left {
+  border-right: 1px solid white;
+  border-left: none;
+}
+
+.board-btn-right {
+  border-left: 1px solid white;
+  border-right: none;
+}
+
+.board-btn-center {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+/*# sourceMappingURL=index-style.css.map */

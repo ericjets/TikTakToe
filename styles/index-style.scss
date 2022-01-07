@@ -1,0 +1,71 @@
+$boardBorder: 1px solid white;
+
+
+@font-face {
+    font-family: eraserRegular;
+    src: url(eraserregular.ttf);
+}
+
+@font-face {
+    font-family: eraserDust;
+    src: url(eraserdust.ttf);
+}
+
+:root {
+    --isMarked : false;
+}
+
+
+
+.board-row {
+    height: 33.3%;
+
+    button{
+        background-color: black;
+        font-size: 10vw;
+        font-family: 'Fredericka the Great', cursive;
+
+        //font-family: 'PT Serif', serif;
+        &:hover {
+            color: red;
+            opacity: .25;
+        }
+    }
+}
+
+#board-row-1 {
+    button{
+        border-top: none;
+        border-bottom: $boardBorder;
+        
+    }
+}
+
+#board-row-2 {
+    button{
+        border-top: $boardBorder;
+        border-bottom: $boardBorder;
+    }
+}
+
+#board-row-3 {
+    button{
+        border-top: $boardBorder;
+        border-bottom: none;
+    }
+}
+
+.board-btn-left {
+    border-right: $boardBorder;
+    border-left: none;
+}
+
+.board-btn-right {
+    border-left: $boardBorder;
+    border-right: none;
+}
+
+.board-btn-center {
+    border-left: $boardBorder;
+    border-right: $boardBorder;
+}
